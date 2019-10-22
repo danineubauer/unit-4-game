@@ -31,7 +31,10 @@
         <p id="losses"></p>
         <p>Total Score:</p>
         <p id="userScore"></p>
-
+        
+        <button id="newGame">New Game</button>
+        <br><br>
+        <h4>Your coins:</h4>
         <!--Coins-->
         <div>
             <div class="row" id="coins">
@@ -59,60 +62,7 @@
         </div>
     </div>
 
-    <script>
-
-        //Variables: 
-        // var num = (Math.random)*10;
-        // console.log(num);
-
-        // //Nodes: 
-
-        //1-100
-
-        var divisibleThreeFive = []; 
-        var divisibleThree = []; 
-        var divisibleFive = []; 
-        var notDivisible = []; 
-
-        for (let index = 0; index < 20; index++) {
-                if (index === 1) {
-                    console.log("prime", index);
-                } else if (index === 2 ) {
-                    console.log("prime", index);
-                } else if (index === 3) {
-                    console.log("prime", index);
-                } else if (index === 5) { 
-                    console.log("prime", index);
-                } else if (index === 7) {
-                    console.log("prime", index); 
-                } else if {(index % 2 !== 0 && index % 3 !== 0 && index % 5 !== 0 && index % 7 !==0);
-                    console.log("prime", index);
-                } else { 
-                    console.log("not prime", index);
-                };
-        };
-
-    
-
-
-
-
-
-        //Display four crystals as buttons: 
-        //When clicked, add value attached to them to playerScore. 
-        //Get computer to choose random number: 
-        //hide amount until player clicks a crystal. 
-        //When crystal is clicked, update player's count. 
-        //When crystals are clicked, a specific amount of points are added to he player's total score. 
-        //When score matches random number - wins. 
-        //when score goes above random number - losses. 
-        //Begin the game again: 
-            //reset playerScore
-            //new random number 
-            //set new values to crystals
-            //update number of games the player wins and loses. 
-
-    </script>
+    <script text="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>
