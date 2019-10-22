@@ -1,0 +1,42 @@
+
+/*Images*/
+
+img { 
+    position: relative;
+}
+
+.tenA { 
+    height: 120px;
+    width: 250px;
+    background-image: url("../images/TenAgorot.jpg");
+}
+
+.half { 
+    height: 120px;
+    width: 250px;
+    background-image: url("../images/halfShekel.jpg");
+}
+
+.shek { 
+    height: 120px;
+    width: 250px;
+    background-image: url("../images/Shekel.jpg");
+}
+
+.twoShek { 
+    height: 120px;
+    width: 250px;
+    background-image: url("../images/twoShekels.jpg");
+}
+
+.fiveShek { 
+    height: 120px;
+    width: 250px;
+    background-image: url("../images/fiveShekels.jpg");
+}
+
+.tenShek { 
+    height: 120px;
+    width: 250px;
+    background-image: url("../images/tenShekels.jpg");
+}

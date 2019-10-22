@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Currency</h1>
+        <h2 id="instructions">Instructions</h2>
+        <h3>Your bill is:</h3>
+        <h3 id=randomNumber></h3>
+        <p>Wins:</p>
+        <p id="wins"></p>
+        <p>Loses:</p>
+        <p id="losses"></p>
+        <p>Total Score:</p>
+        <p id="userScore"></p>
+
+        <!--Coins-->
+        <div>
+            <div class="row" id="coins">
+                <div>
+                    <img class="tenA">
+                </div>
+                <div>
+                    <img class="half">
+                </div>
+                <div>
+                    <img class="shek">
+                </div>
+
+                <div>
+                    <img class="twoShek">
+                </div>
+
+                <div>
+                    <img class="fiveShek">
+                </div>
+                <div>
+                    <img class="tenShek">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        //Variables: 
+        // var num = (Math.random)*10;
+        // console.log(num);
+
+        // //Nodes: 
+
+        //1-100
+
+        var divisibleThreeFive = []; 
+        var divisibleThree = []; 
+        var divisibleFive = []; 
+        var notDivisible = []; 
+
+        for (let index = 0; index < 20; index++) {
+                if (index === 1) {
+                    console.log("prime", index);
+                } else if (index === 2 ) {
+                    console.log("prime", index);
+                } else if (index === 3) {
+                    console.log("prime", index);
+                } else if (index === 5) { 
+                    console.log("prime", index);
+                } else if (index === 7) {
+                    console.log("prime", index); 
+                } else if {(index % 2 !== 0 && index % 3 !== 0 && index % 5 !== 0 && index % 7 !==0);
+                    console.log("prime", index);
+                } else { 
+                    console.log("not prime", index);
+                };
+        };
+
+    
+
+
+
+
+
+        //Display four crystals as buttons: 
+        //When clicked, add value attached to them to playerScore. 
+        //Get computer to choose random number: 
+        //hide amount until player clicks a crystal. 
+        //When crystal is clicked, update player's count. 
+        //When crystals are clicked, a specific amount of points are added to he player's total score. 
+        //When score matches random number - wins. 
+        //when score goes above random number - losses. 
+        //Begin the game again: 
+            //reset playerScore
+            //new random number 
+            //set new values to crystals
+            //update number of games the player wins and loses. 
+
+    </script>
+</body>
+
+</html>
