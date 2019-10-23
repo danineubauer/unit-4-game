@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Crystal Game</title>
+    <title>Currency Game (aka Crystal Game)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -21,45 +22,78 @@
 
 <body>
     <div class="container">
-        <h1 id="title">Currency</h1>
-        <h2 id="instructions">Instructions</h2>
-        <h3>Your bill is:</h3>
-        <h3 id=randomNumber></h3>
-        <p>Wins:</p>
-        <p id="wins"></p>
-        <p>Loses:</p>
-        <p id="losses"></p>
-        <p>Total Score:</p>
-        <p id="userScore"></p>
-        
-        <button id="newGame">Start Over</button>
         <br><br>
-        <h4>Your coins:</h4>
-        <!--Coins-->
-        <div>
-            <div class="row" id="coins">
-                <div>
-                    <img class="tenA">
-                </div>
-                <div>
-                    <img class="half">
-                </div>
-                <div>
-                    <img class="shek">
-                </div>
-
-                <div>
-                    <img class="twoShek">
-                </div>
-
-                <div>
-                    <img class="fiveShek">
-                </div>
-                <div>
-                    <img class="tenShek">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Currency Game</h1>
+                        <h2 class="lead">Traveling to Israel and want to familiarize yourself with the Israeli currency?
+                            Here's your chance.<br>
+                            Pay your bill below with the coins in your wallet to win the game.</h2>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="jumbotron jumbotron-fluid bill">
+                    <div class="billtext">
+                        <h1 class="display-4">Your Bill:</h1>
+                        <h3 class="numberclass" id=randomNumber></h3>
+                        <p>Wins:</p>
+                        <p id="wins"></p>
+                        
+                        <p>Loses:</p>
+                        <p id="losses"></p>
+                        
+                        <p>Total Score:</p>
+                        <p id="userScore"></p>
+                        
+                        <button id="newGame" class="btnNG">Start Over</button>
+                    </div>
+                        
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="jumbotron jumbotron-fluid wallet">
+                    <h1 class="display-4"></h1>
+                    <div>
+                        <div class="row">
+                            <div>
+                                <div class="tenA coin"></div>
+                            </div>
+                            <div>
+                                <div class="half"></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div>
+                                <div class="shek coin"></div>
+                            </div>
+                            <div>
+                                <div class="twoShek coinr"></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div>
+                                <div class="fiveShek coin"></div>
+                            </div>
+                            <div>
+                                <div class="tenShek coinr"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br><br>
     </div>
 
     <script text="text/javascript" src="assets/javascript/game.js"></script>

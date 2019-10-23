@@ -35,7 +35,7 @@ $(document).ready(function () {
         if (userScore.toFixed(2) === (num)) {
             wins++;
             $("#wins").text(wins); 
-            console.log("wins", wins);
+            console.log("wins", wins);            
             userScore = 0;  
             $("#userScore").text(userScore);   
             alert("Great Job! You paid your bill");

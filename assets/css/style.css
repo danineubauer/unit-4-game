@@ -1,42 +1,94 @@
 
 /*Images*/
 
-img { 
-    position: relative;
+.bill { 
+    height: 570px;
+}
+
+.billtext { 
+    margin-left: 40px;
+}
+
+.numberclass { 
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btnNG { 
+    margin-left: 60px;
+}
+
+.wallet { 
+    height: 570px;
+    width: 720px;
+    background-image: url("../images/bag.jpg");
+}
+
+.coin { 
+    margin-left: 150px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 30px;  
+
+}
+
+.coinr { 
+    margin-top: 30px;
+    border-radius: 30px;  
+
 }
 
 .tenA { 
-    height: 120px;
-    width: 250px;
+    height: 70px;
+    width: 195px;
+    transform: rotate(-20deg);
+    margin-top: 50px;  
+    border-radius: 30px;  
     background-image: url("../images/TenAgorot.jpg");
 }
 
 .half { 
-    height: 120px;
-    width: 250px;
+    height: 70px;
+    width: 185px;
+    transform: rotate(-30deg);  
+    margin-top: 60px;
+    margin-left: -70px;
+    border-radius: 30px;  
+
     background-image: url("../images/halfShekel.jpg");
 }
 
 .shek { 
-    height: 120px;
-    width: 250px;
+    height: 65px;
+    width: 170px;
+    transform: rotate(20deg);  
+    margin-left: 280px;
     background-image: url("../images/Shekel.jpg");
 }
 
 .twoShek { 
-    height: 120px;
-    width: 250px;
+    height: 70px;
+    width: 195px;
+    transform: rotate(60deg); 
+    margin-top: 50px; 
+    margin-left: -60px;
     background-image: url("../images/twoShekels.jpg");
 }
 
 .fiveShek { 
-    height: 120px;
-    width: 250px;
+    height: 65px;
+    width: 170px;
+    transform: rotate(-10deg);  
+    margin-top: -10px;
     background-image: url("../images/fiveShekels.jpg");
 }
 
 .tenShek { 
-    height: 120px;
-    width: 250px;
+    height: 65px;
+    width: 180px;
+    transform: rotate(-30deg);  
+    margin-left: -40px;
     background-image: url("../images/tenShekels.jpg");
 }
