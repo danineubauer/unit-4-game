@@ -1,7 +1,7 @@
 $(document).ready(function() { 
 
-    var wins;
-    var losses; 
+    var wins = 0;
+    var losses = 0; 
 
     var randomCountNumber; 
     var yourCount = 0;
