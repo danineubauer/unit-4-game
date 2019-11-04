@@ -20,7 +20,6 @@ To play on the browser, got to the link above. \
 \ 
 HTML \ 
 CSS \ 
-JavaScript \
 JQuery \
  
 
