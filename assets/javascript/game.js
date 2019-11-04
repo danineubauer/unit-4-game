@@ -3,15 +3,16 @@ $(document).ready(function() {
     var wins;
     var losses; 
 
-    var yourCount;
+    var randomCountNumber; 
+    var yourCount = 0;
 
-    var crystalOne; 
-    var crystalTwo; 
-    var crystalThree; 
-    var crystalFour;
+    var crystalOne = 0; 
+    var crystalTwo = 0; 
+    var crystalThree = 0; 
+    var crystalFour = 0;
 
     //generate random count: 
-    randomNumber = Math.floor(Math.random() * 101 + 19);
+    randomCountNumber = Math.floor(Math.random() * 101 + 19);
     //generate crystal count: 
 
     //display random count:    
@@ -56,8 +57,14 @@ $(document).ready(function() {
 
     function crystalClick(crystalNum) { 
         yourCount = yourCount + crystalNum;
-        $("yourCount").text()
-        if ()
+        $("yourCount").text(yourCount);
+        if (yourCount === randomCountNumber) { 
+            wins++; 
+            alert("You won!")
+        } else {
+            losses++;
+            alert("You lost! Your count didn't add up to the number") 
+        }
     }
 
     //create event listener for each crystal when clicked: 
