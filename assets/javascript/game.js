@@ -12,12 +12,15 @@ $(document).ready(function() {
     var crystalFour = 0;
 
     //generate random count: 
-    randomCountNumber = Math.floor(Math.random() * 101 + 19);
-    //generate crystal count: 
+    var randomCountNumber; 
 
+    function genRandomCountNumber() { 
+        randomCountNumber = Math.floor(Math.random() * 101 + 19); 
+        return randomCountNumber;      
+    }
     //display random count:    
-    $("#randomCount").text(randomCountNumber);
-
+    $("#randomCount").text(genRandomCountNumber);
+    
 
     //display wins/loses: 
     $("#wins").text(wins);
@@ -61,6 +64,7 @@ $(document).ready(function() {
         $("yourCount").text(yourCount);
         if (yourCount === randomCountNumber) { 
             wins++; 
+            $("#wins").text(wins);
             alert("You won!")
             newGame();
         } else if ( yourCount < randomCountNumber) {
@@ -69,6 +73,7 @@ $(document).ready(function() {
             console.log("random Count: ", randomCountNumber);
         } else {
             losses++;
+            $("#losses").text(losses);
             newGame();
             alert("You lost! Your count didn't add up to the number") 
         }
@@ -78,6 +83,10 @@ $(document).ready(function() {
         randomCountNumber = 0;
         yourCount = 0; 
         crystalRandomNumber();
+        genRandomCountNumber();
+        $("#randomCount").text(genRandomCountNumber);
+        $("#yourCount").text(yourCount);
+         
     }
 
 });
