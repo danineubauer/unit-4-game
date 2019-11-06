@@ -47,7 +47,6 @@ $(document).ready(function() {
 
     //When crystals clicked: 
     $("#crystalOne").on("click", function(){ 
-        console.log("1 clicked")
         crystalClick(crystalOne) }); 
 
     $("#crystalTwo").on("click", function(){ 
