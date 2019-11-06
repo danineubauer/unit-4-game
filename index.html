@@ -21,23 +21,76 @@
 </head>
 
 <body>
+    <br><br>
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header">
+                <h1>The Crystal Game</h1>
+            </div>
+
+            <div class="card-body">
+                <p class="card-text">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h4>Count: </h4>
+                        </div>
+                        <div class="col-lg-3">
+                            <h4 id="randomCount"></h4>
+                        </div>
 
 
-    <h1>The Crystal Game</h1>
-    <br>
-    <h4>Count: </h4><h4 id="randomCount"></h4>
-    <h4>Your Count: </h4><h4 id="yourCount"></h4>
-    <br>
-    <p>wins: </p> <p id="wins"></p>
-    <p>Losses: </p> <p id="losses"></p>
-    
-    <br>
+                        <div class="col-lg-3">
+                            <h4>Your Count: </h4>
+                        </div>
+                        <div class="col-lg-3">
+                            <h4 id="yourCount"></h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h4>wins: </h4>
+                        </div>
+                        <div class="col-lg-3">
+                            <h4 id="wins"></h4>
+                        </div>
 
-    <img class = "crystals" alt="1" id="crystalOne" src="assets/images/crystalOne.jpg">
-    <img class = "crystals" alt="2" id="crystalTwo" src="assets/images/crystalTwo.jpg">
-    <img class = "crystals" alt="3" id="crystalThree" src="assets/images/crystalThree.jpg">
-    <img class = "crystals" alt="4" id="crystalFour" src="assets/images/crystalFour.jpg">
 
+                        <div class="col-lg-3">
+                            <h4>Losses: </h4>
+                        </div>
+                        <div class="col-lg-3">
+                            <h4 id="losses"></h4>
+                        </div>
+                    </div>
+                    <div class="card-deck">
+                        <div class="card" style="border: none;">
+                            <img class="img-top" class="crystals" alt="1" id="crystalOne"
+                                src="assets/images/crystalOne.jpg" alt="Card image cap"
+                                style="height: 200px; width: 200px;">
+                        </div>
+
+                        <div class="card" style="border: none;">
+                            <img class="img-top" class="crystals" alt="2" id="crystalTwo"
+                                src="assets/images/crystalTwo.jpg" alt="Card image cap"
+                                style="height: 200px; width: 200px;">
+                        </div>
+
+                        <div class="card" style="border: none;">
+                            <img class="img-top" class="crystals" alt="3" id="crystalThree"
+                                src="assets/images/crystalThree.jpg" alt="Card image cap"
+                                style="height: 200px; width: 200px;">
+                        </div>
+
+                        <div class="card" style="border: none;">
+                            <img class="img-top" class="crystals" alt="4" id="crystalFour"
+                                src="assets/images/crystalFour.jpg" alt="Card image cap"
+                                style="height: 200px; width: 200px;">
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+    </div>
 
     <script text="text/javascript" src="assets/javascript/game.js"></script>
 </body>

@@ -42,7 +42,7 @@ $(document).ready(function() {
 
     //random number for crystals: 
     function crystalRandomNumber() { 
-        return Math.floor(Math.random() * 20)
+        return Math.floor(Math.random() * 20+1)
     }
 
     //When crystals clicked: 

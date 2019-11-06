@@ -1,94 +1,31 @@
 
-/*Images*/
-
-.bill { 
-    height: 570px;
+body { 
+    background: url( ../images/background.jpg) no-repeat center center fixed;
+    -webkit-background-size:
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    text-shadow: 2px;
+    margin-left: 30px;
 }
 
-.billtext { 
-    margin-left: 40px;
+.card-deck { 
+    margin: 0px;
 }
 
-.numberclass { 
-    margin-left: 60px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.container { 
+    width: 900px;
+    height: 350px;
 }
 
-.btnNG { 
-    margin-left: 60px;
+.row { 
+    justify-content: center;
+    margin: 3px;
 }
-
-.wallet { 
-    height: 570px;
-    width: 720px;
-    background-image: url("../images/bag.jpg");
-}
-
-.coin { 
-    margin-left: 150px;
-    margin-right: 50px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    border-radius: 30px;  
-
-}
-
-.coinr { 
-    margin-top: 30px;
-    border-radius: 30px;  
-
-}
-
-.tenA { 
-    height: 70px;
-    width: 195px;
-    transform: rotate(-20deg);
-    margin-top: 50px;  
-    border-radius: 30px;  
-    background-image: url("../images/TenAgorot.jpg");
-}
-
-.half { 
-    height: 70px;
-    width: 185px;
-    transform: rotate(-30deg);  
-    margin-top: 60px;
-    margin-left: -70px;
-    border-radius: 30px;  
-
-    background-image: url("../images/halfShekel.jpg");
-}
-
-.shek { 
-    height: 65px;
-    width: 170px;
-    transform: rotate(20deg);  
-    margin-left: 280px;
-    background-image: url("../images/Shekel.jpg");
-}
-
-.twoShek { 
-    height: 70px;
-    width: 195px;
-    transform: rotate(60deg); 
-    margin-top: 50px; 
-    margin-left: -60px;
-    background-image: url("../images/twoShekels.jpg");
-}
-
-.fiveShek { 
-    height: 65px;
-    width: 170px;
-    transform: rotate(-10deg);  
-    margin-top: -10px;
-    background-image: url("../images/fiveShekels.jpg");
-}
-
-.tenShek { 
-    height: 65px;
-    width: 180px;
-    transform: rotate(-30deg);  
-    margin-left: -40px;
-    background-image: url("../images/tenShekels.jpg");
+ 
+.img { 
+    height: 225px;
+    width: 225px;
 }
